@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mototaxi Churcampa - App</title>
+    <link rel="stylesheet" href="sd.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-motorcycle"></i>
+            <h1>Mototaxi Churcampa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#solicitar">Solicitar</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <h2>¡Solicita tu mototaxi en segundos!</h2>
+        <p>Fácil, rápido y seguro. ¡El mejor servicio de mototaxi en Churcampa!</p>
+        <a href="#solicitar" class="btn">Solicitar Ahora</a>
+        <img src="moto-taxi.jpg" alt="Mototaxi" class="moto-taxi-img">
+    </section>
+
+    <!-- Sección Solicitar -->
+    <section class="container" id="solicitar">
+        <div class="location-section">
+            <h2><i class="fas fa-map-marker-alt"></i> Solicita tu Mototaxi</h2>
+            <form>
+                <label for="pickup">Punto de recogida:</label>
+                <input type="text" id="pickup" placeholder="Ingresa tu ubicación">
+
+                <label for="destination">Destino:</label>
+                <input type="text" id="destination" placeholder="Ingresa tu destino">
+
+                <label for="price">Precio estimado (S/):</label>
+                <input type="text" id="price" placeholder="S/5.00" disabled>
+
+                <label for="payment-method">Método de pago:</label>
+                <select id="payment-method">
+                    <option value="efectivo">Efectivo</option>
+                    <option value="tarjeta">Tarjeta</option>
+                    <option value="app">Pago en la App</option>
+                </select>
+
+                <button type="submit">Solicitar Mototaxi</button>
+            </form>
+        </div>
+
+        <div class="map-section">
+            <h2><i class="fas fa-map"></i> Tu ubicación</h2>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12768.034728902844!2d-74.924377!3d-12.712376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910ac4b8c3a4e2ff%3A0x5ef70b8ad51a0f70!2sChurcampa%2C%20Per%C3%BA!5e0!3m2!1ses!2s!4v1632515058072!5m2!1ses!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Precios -->
+    <section class="pricing" id="precios">
+        <h2>Precios Claros y Justos</h2>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Tipo de viaje</th>
+                    <th>Distancia</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Viaje Corto</td>
+                    <td>Hasta 2 km</td>
+                    <td>S/ 3.00</td>
+                </tr>
+                <tr>
+                    <td>Viaje Mediano</td>
+                    <td>2-5 km</td>
+                    <td>S/ 5.00</td>
+                </tr>
+                <tr>
+                    <td>Viaje Largo</td>
+                    <td>5-10 km</td>
+                    <td>S/ 8.00</td>
+                </tr>
+                <tr>
+                    <td>Viaje Especial</td>
+                    <td>Más de 10 km</td>
+                    <td>S/ 12.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Sección Video -->
+    <section class="video-section">
+        <h2>Conoce cómo funciona</h2>
+        <video width="100%" controls>
+            <source src="mototaxi-demo.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+    </section>
+
+    <!-- Sección Testimonios -->
+    <section class="testimonials" id="testimonios">
+        <h2>Testimonios de nuestros usuarios</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <img src="imagenes/h2.png" alt="Usuario 1">
+                <p>"El servicio es excelente. Rápido y seguro, lo uso todos los días para ir al trabajo."</p>
+                <h4>Juan Pérez</h4>
+            </div>
+            <div class="testimonial">
+                <img src="imagenes/m1.png" alt="Usuario 2">
+                <p>"La app es muy fácil de usar, y siempre sé cuánto voy a pagar. ¡Muy recomendable!"</p>
+                <h4>María García</h4>
+            </div>
+            <div class="testimonial">
+                <img src="imagenes/h1.png" alt="Usuario 3">
+                <p>"Me encanta el sistema de pagos en la app, es muy cómodo y los conductores son muy amables."</p>
+                <h4>Carlos Ruiz</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section class="contact" id="contacto">
+        <h2>Contacto</h2>
+        <form class="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="Ingresa tu nombre">
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" placeholder="Ingresa tu correo">
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" placeholder="Escribe tu mensaje aquí"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Sección Login / Registro -->
+    <section class="login" id="login">
+        <h2>Inicia sesión o Regístrate</h2>
+        <div class="login-container">
+            <button class="btn-google"><i class="fab fa-google"></i> Iniciar sesión con Google</button>
+            <button class="btn-facebook"><i class="fab fa-facebook-f"></i> Iniciar sesión con Facebook</button>
+            <button class="btn-email"><i class="fas fa-envelope"></i> Registrarse con correo</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mototaxi Churcampa | Todos los derechos reservados</p>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
+
