@@ -147,7 +147,7 @@ select {
 }
 
 .pricing-image {
-  width: 40%; /* Ajustar tamaño relativo */
+  width: 25%; /* Ajustar tamaño relativo */
   height: auto; /* Mantener proporción */
   border-radius: 8px; /* Bordes redondeados opcionales */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
