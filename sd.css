@@ -124,9 +124,15 @@ select {
   background-color: #f8f8f8;
 }
 
+.pricing-content {
+  display: flex;
+  align-items: center; /* Alinear verticalmente tabla e imagen */
+  justify-content: center; /* Centrar los elementos */
+  gap: 20px; /* Espaciado entre tabla e imagen */
+}
+
 .price-table {
-  width: 60%;
-  margin: 0 auto;
+  width: 50%; /* Reducir ancho para hacer espacio */
   border-collapse: collapse;
 }
 
@@ -139,6 +145,14 @@ select {
   background-color: #2196F3;
   color: white;
 }
+
+.pricing-image {
+  width: 40%; /* Ajustar tamaño relativo */
+  height: auto; /* Mantener proporción */
+  border-radius: 8px; /* Bordes redondeados opcionales */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+}
+
 
 /* Sección Testimonios */
 .testimonials {
