@@ -39,9 +39,28 @@
         <div class="location-section">
             <h2><i class="fas fa-map-marker-alt"></i> Solicita tu Mototaxi</h2>
             <form>
-              <label for="pickup">Punto de recogida:</label>
-                  <button onclick="window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12768.034728902844!2d-74.924377!3d-12.712376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910ac4b8c3a4e2ff%3A0x5ef70b8ad51a0f70!2sChurcampa%2C%20Per%C3%BA!5e0!3m2!1ses!2s!4v1632515058072!5m2!1ses!2s', '_blank')">Ingresa tu ubicación por Google Maps</button>
-                <label for="destination">Destino:</label>
+              <label for="pickup">Punto de recogida:</label> 
+              <button onclick="abrirMapa()">Ingresa tu ubicación por Google Maps</button>
+              <!-- Área de visualización del mapa -->
+              <div id="map-container" style="display: none; margin-top: 20px;">
+                <iframe id="mapa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+
+<script>
+function abrirMapa() {
+    const url = prompt("Pega aquí el enlace de Google Maps de tu ubicación:");
+
+    if (url) {
+        const mapContainer = document.getElementById("map-container");
+        const iframe = document.getElementById("mapa");
+
+        // Actualizar el iframe con el nuevo URL
+        iframe.src = url;
+        mapContainer.style.display = "block";
+    }
+}
+</script>
+              <label for="destination">Destino:</label>
                 <select id="payment-method">
                    <option value="efectivo">IES "Antonio Raimondi"</option>
                    <option value="tarjeta">IES "Señor de Atoccasa"</option>
