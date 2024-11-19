@@ -128,7 +128,7 @@ select {
   display: flex;
   align-items: center; /* Alinear verticalmente tabla e imagen */
   justify-content: center; /* Centrar los elementos */
-  gap: 20px; /* Espaciado entre tabla e imagen */
+  gap: 15px; /* Espaciado entre tabla e imagen */
 }
 
 .price-table {
